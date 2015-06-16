@@ -1,10 +1,17 @@
 ###--------------------------------------------------
 ### Scraping 2015 UK election data from the BBC
 ###--------------------------------------------------
-
 library(ggplot2)
 library(scales)
 library(dplyr)
+library(devtools)
+###--------------------------------------------------
+### Now we are trying to load a dev version of rvest
+### So dev_mode(on=T) is used to have a github install
+###--------------------------------------------------
+dev_mode(on=T)
+install_github("hadley/rvest")
+###---------------------------------------------------
 library(rvest)
 library(stringr)
 library(car)
